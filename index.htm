@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Face Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Code Rain -->
+    <canvas id="digitalCanvas"></canvas>
+
+    <div class="scanner-container">
+        <h1 class="title">NEURAL NET INTERFACE</h1>
+
+        <div class="camera-box">
+
+            <!-- Face scanning image -->
+            <img id="faceImage" src="" alt="Face Scan" style="display: none;">
+
+            <div class="crt-overlay"></div>
+            <div class="scan-line"></div>
+
+            <!-- Target brackets -->
+            <div class="crosshair">
+                <div class="tl"></div>
+                <div class="tr"></div>
+                <div class="bl"></div>
+                <div class="br"></div>
+            </div>
+
+            <!-- Display Text -->
+            <div class="hud">
+                <p id="status">SYSTEM STANDBY...</p>
+                <p id="data-stream"></p>
+            </div>
+        </div>
+
+        <button id="scanBtn">INITIATE UPLINK</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
